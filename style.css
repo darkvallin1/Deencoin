@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f9f4;
+  color: #222;
+}
+header {
+  background: #0c5c4c;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+header h1 {
+  margin: 0;
+}
+#btn-signin {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #fff;
+  border: none;
+  color: #0c5c4c;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.task-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+.task-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-title {
+  font-weight: bold;
+}
+.btn {
+  padding: 8px 14px;
+  background: #198754;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #157347;
+}
