@@ -1,22 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-  <meta charset="UTF-8" />
-  <title>DEENCOIN Airdrop</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css">
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>হালাল আয় - Halal Earning</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>🕌 DEENCOIN AIRDROP</h1>
-    <p id="welcome">Please sign in to earn rewards</p>
-    <button id="deencoin-1b645">🔐 Sign in with Google</button>
-    <div id="balance" style="margin-top:10px;"></div>
-  </header>
-  <div class="task-container" id="tasks" style="display:none;"></div>
-  <script src="script.js"></script>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>হালাল আয়</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">হোম</a></li>
+                <li><a href="#about">সম্পর্কে</a></li>
+                <li><a href="#services">সেবাসমূহ</a></li>
+                <li><a href="#earnings">আয়</a></li>
+                <li><a href="#contact">যোগাযোগ</a></li>
+                <li><a href="admin.html" class="admin-btn">এডমিন</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>হালাল উপায়ে আয় করুন</h1>
+            <p>ইসলামিক নীতিমালা মেনে অনলাইন আয়ের সুযোগ</p>
+            <button class="cta-button" onclick="registerUser()">রেজিস্টার করুন</button>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>আমাদের সেবাসমূহ</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>কনটেন্ট রাইটিং</h3>
+                <p>ইসলামিক বিষয়ে আর্টিকেল লিখে আয় করুন</p>
+                <span class="price">প্রতি আর্টিকেল ২০০-৫০০ টাকা</span>
+            </div>
+            <div class="service-card">
+                <h3>অনলাইন টিউশন</h3>
+                <p>কুরআন ও আরবি ভাষা শিখান</p>
+                <span class="price">ঘন্টায় ১৫০-৩০০ টাকা</span>
+            </div>
+            <div class="service-card">
+                <h3>ডিজাইন সার্ভিস</h3>
+                <p>ইসলামিক গ্রাফিক্স ডিজাইন</p>
+                <span class="price">প্রতি ডিজাইন ৩০০-৮০০ টাকা</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="earnings" class="earnings">
+        <h2>আয়ের বিবরণ</h2>
+        <div class="earning-stats">
+            <div class="stat-card">
+                <h3>বর্তমান ব্যালেন্স</h3>
+                <p id="currentBalance">০ টাকা</p>
+            </div>
+            <div class="stat-card">
+                <h3>আজকের আয়</h3>
+                <p id="todayEarning">০ টাকা</p>
+            </div>
+            <div class="stat-card">
+                <h3>মোট আয়</h3>
+                <p id="totalEarning">০ টাকা</p>
+            </div>
+        </div>
+        <button class="withdraw-btn" onclick="withdrawMoney()">টাকা উত্তোলন</button>
+    </section>
+
+    <footer>
+        <p>&copy; ২০২৪ হালাল আয় - সকল অধিকার সংরক্ষিত</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
